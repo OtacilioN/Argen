@@ -1,43 +1,9 @@
 <template>
-  <v-app>
-    <v-navigation-drawer
-      persistent
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      v-model="drawer"
-      enable-resize-watcher
-      fixed
-      app
-    >
-      <v-list>
-        <v-list-tile
-          value="true"
-          v-for="(item, i) in items"
-          :key="i"
-        >
-          <v-list-tile-action>
-            <v-icon v-html="item.icon"></v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title v-text="item.title"></v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-    </v-navigation-drawer>
+  <v-app dark>
     <v-toolbar
       app
       :clipped-left="clipped"
     >
-      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-btn icon @click.stop="miniVariant = !miniVariant">
-        <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'"></v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="clipped = !clipped">
-        <v-icon>web</v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="fixed = !fixed">
-        <v-icon>web</v-icon>
-      </v-btn>
       <v-toolbar-title v-text="title"></v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon @click.stop="rightDrawer = !rightDrawer">
@@ -45,52 +11,80 @@
       </v-btn>
     </v-toolbar>
     <v-content>
-      <HelloWorld/>
+      <v-container fluid grid-list-{xs through xl}>
+        <v-layout row  >
+          <v-flex sm-2 style="">
+            <v-card-title class="headline">Faixa Etária</v-card-title>
+           <Pie />
+          </v-flex>
+          <v-flex sm-2>
+           <Pie />
+          </v-flex>
+        </v-layout>
+      </v-container>
     </v-content>
-    <v-navigation-drawer
-      temporary
-      :right="right"
-      v-model="rightDrawer"
-      fixed
-      app
-    >
-      <v-list>
-        <v-list-tile @click="right = !right">
-          <v-list-tile-action>
-            <v-icon>compare_arrows</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
-        </v-list-tile>
-      </v-list>
-    </v-navigation-drawer>
     <v-footer :fixed="fixed" app>
-      <span>&copy; 2017</span>
+     <!-- <span style="margin: auto">&copy; 2018 Hackathon Shopping Recife</span>-->
     </v-footer>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import firebase from "firebase"
+var config = {
+  apiKey: "AIzaSyBehGbs2KNIzDadkj6WrvipOr3pR5ZQAA4",
+  authDomain: "argen-9f8f3.firebaseapp.com",
+  databaseURL: "https://argen-9f8f3.firebaseio.com",
+  storageBucket: "argen-9f8f3.appspot.com",
+  messagingSenderId: "1055421395236",
+  projectId: "argen-9f8f3"
+};
+firebase.initializeApp(config);
+var db = firebase.firestore();
 
+ db.collection('cliente').get()
+    .then((snapshot) => {
+      snapshot.forEach((doc) => {
+        console.log(doc.id, '=>', doc.data());
+      });
+    })
+    .catch((err) => {
+      console.log('Error getting documents', err);
+    });
+
+import HelloWorld from './components/HelloWorld'
+import Pie from './components/CommitChart'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Pie
+  
   },
   data () {
     return {
       clipped: false,
-      drawer: true,
+     
       fixed: false,
       items: [{
         icon: 'bubble_chart',
         title: 'Inspire'
       }],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'Argen'
     }
+  },
+  methods:{
+    chamarTest: function(){
+     
+    },
+    
   }
+  
 }
 </script>
+
+<style scoped>
+  .graphs{
+    height: 200px;
+  }
+</style>
