@@ -12,9 +12,9 @@
       </v-btn>
     </v-toolbar>
     <v-content>
-      <v-container fluid grid-list-{xs through xl}>
+      <v-container justify-center  fluid grid-list-{xs through xl}>
         <v-layout column>
-          <v-flex sm-1 wrap>
+          <v-flex sm-1 wrap justify-center>
             <v-layout row style="background-color:#2B2825" align-center justify-center fill-height>
               <v-flex sm-1 m-0 p-0 >
                 <v-card-title  m-0 p-0 v-if="chegouGastoMedio" class="ma-0  pa-0 headline justify-center"> <v-icon size="120px"  justify-center align-center class="justify-center" >person</v-icon></v-card-title>
@@ -27,7 +27,7 @@
               </v-flex>
             </v-layout>
           </v-flex>
-          <v-flex sm-3 wrap>
+          <v-flex justify-center  sm-3 wrap>
             <v-layout row justify-center>
               <v-flex sm-6 justify-center style="">
                 <v-card-title class="headline">Gênero</v-card-title>
@@ -50,6 +50,10 @@
               <v-card-title class="headline">Top Lojas</v-card-title>
               <topLojasPie  style="height:30vh; width:30vw" v-if="chegouTopLojas" v-bind:data="toplojasQuant" v-bind:labels="toplojasNomes"/>
               </v-flex>
+              <v-flex sm-6 style="margin-top:40vh; ">
+              <v-card-title class="headline">Compras por horário</v-card-title>
+              <horarioBar  style="height:10vh; width:30vw" v-if="chegouResultadoVendas" v-bind:objdata="resultadoVendas" />
+              </v-flex>
             </v-layout>
           </v-flex>
         </v-layout>
@@ -64,21 +68,38 @@
 <script>
 const axios = require('axios');
 
-import HelloWorld from './components/HelloWorld'
 import GeneroPie from './components/generoPie'
 import FaixaEtariaPie from './components/faixaEtariaPie'
 import topLojasPie from './components/topLojas'
+import horarioBar from './components/horarioBar'
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     GeneroPie,
     FaixaEtariaPie,
-    topLojasPie
+    topLojasPie,
+    horarioBar
   
   },
   created(){
     var vm = this;
+     axios.get('https://argenapi-otacilioneto.c9users.io:8080/users/horarioCompras'
+  ) 
+  .then(function (response){
+    console.log(response.data);
+     
+        vm.resultadoVendas =  response.data.resultadoVendas;
+        console.log(vm.resultadoVendas);
+        vm.chegouResultadoVendas = true;
+  })
+  .catch(function (error) {
+  
+    console.log(error);
+  
+  })
+  .then(function () {
+    
+  });
     axios.get('https://argenapi-otacilioneto.c9users.io:8080/users/generoBalanco'
   ) 
   .then(function (response){
@@ -167,13 +188,17 @@ export default {
       chegouTopLojas: false,
       toplojasNomes: [],
       toplojasQuant: [],
+      chegouResultadoVendas: false,
+      resultadoVendas: [],
   
     }
   },
   computed:{
     gastoMedio(){
       return this.montante/this.quantidadePessoas;
-    }
+    },
+    
+   
   },
   methods:{
    
