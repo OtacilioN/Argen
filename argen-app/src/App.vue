@@ -16,12 +16,12 @@
         <v-layout column>
           <v-flex sm-1 wrap justify-center>
             <v-layout row style="background-color:#2B2825" align-center justify-center fill-height>
-              <v-flex m-1 sm-6 m-0 p-0 >
+              <v-flex m-1 sm-12 m-0 p-0 >
                 <v-card-title  m-0 p-0 v-if="chegouGastoMedio" class="ma-0  pa-0 headline justify-center"> <v-icon size="110px"  justify-center align-center class="justify-center" >people</v-icon></v-card-title>
                   <v-card-title m-0 p-0 v-if="chegouGastoMedio" class="pa-0 ma-0 headline justify-center" >{{quantidadePessoas}}</v-card-title>
                 <v-card-title m-0 p-0 v-if="chegouGastoMedio" class="pa-0 pb-2 headline justify-center" >Quantidade de usuários</v-card-title>
               </v-flex>
-              <v-flex sm-6 m-1 p-0 >
+              <v-flex sm-12 m-1 p-0 >
                 <v-card-title  m-0 p-0 v-if="chegouGastoMedio" class="ma-0  pa-0 headline justify-center"> <v-icon size="100px"  justify-center align-center class="justify-center" >fas fa-dollar-sign</v-icon></v-card-title>
                   <v-card-title m-0 p-0 v-if="chegouGastoMedio" class="pa-0 headline justify-center" >R$: {{gastoMedio.toFixed(2)}}</v-card-title>
                 <v-card-title m-0 p-0 v-if="chegouGastoMedio" class="pa-0 pb-2 headline justify-center" >Ticket médio</v-card-title>
@@ -85,7 +85,7 @@ export default {
     horarioBar
   
   },
-    
+
   created(){
     var vm = this;
      axios.get('https://argenapi-otacilioneto.c9users.io:8080/users/horarioCompras'
