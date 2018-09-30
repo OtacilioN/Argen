@@ -16,26 +16,29 @@
         <v-layout column>
           <v-flex sm-1 wrap justify-center>
             <v-layout row style="background-color:#2B2825" align-center justify-center fill-height>
-              <v-flex sm-1 m-0 p-0 >
-                <v-card-title  m-0 p-0 v-if="chegouGastoMedio" class="ma-0  pa-0 headline justify-center"> <v-icon size="120px"  justify-center align-center class="justify-center" >person</v-icon></v-card-title>
+              <v-flex m-1 sm-6 m-0 p-0 >
+                <v-card-title  m-0 p-0 v-if="chegouGastoMedio" class="ma-0  pa-0 headline justify-center"> <v-icon size="110px"  justify-center align-center class="justify-center" >people</v-icon></v-card-title>
+                  <v-card-title m-0 p-0 v-if="chegouGastoMedio" class="pa-0 ma-0 headline justify-center" >{{quantidadePessoas}}</v-card-title>
+                <v-card-title m-0 p-0 v-if="chegouGastoMedio" class="pa-0 pb-2 headline justify-center" >Quantidade de usuários</v-card-title>
+              </v-flex>
+              <v-flex sm-6 m-1 p-0 >
+                <v-card-title  m-0 p-0 v-if="chegouGastoMedio" class="ma-0  pa-0 headline justify-center"> <v-icon size="100px"  justify-center align-center class="justify-center" >fas fa-dollar-sign</v-icon></v-card-title>
                   <v-card-title m-0 p-0 v-if="chegouGastoMedio" class="pa-0 headline justify-center" >R$: {{gastoMedio.toFixed(2)}}</v-card-title>
                 <v-card-title m-0 p-0 v-if="chegouGastoMedio" class="pa-0 pb-2 headline justify-center" >Ticket médio</v-card-title>
               </v-flex>
-              <v-flex sm-11  class="justify-center align-center">
-              
-              
-              </v-flex>
+             
+             
             </v-layout>
           </v-flex>
           <v-flex justify-center  sm-3 wrap>
             <v-layout row justify-center>
-              <v-flex sm-6 justify-center style="">
+              <v-flex sm-12 m-6 justify-center style="">
                 <v-card-title class="headline">Gênero</v-card-title>
                 <div v-if="hey">
               <GeneroPie style="height:30vh; width:30vw" v-bind:data="generoDatas"  />
               </div>
               </v-flex>
-              <v-flex sm-6 justify-center style="">
+              <v-flex sm-6 m-6 justify-center style="">
               <v-card-title class="headline">Faixa Etária</v-card-title>
                 <div v-if="chegouFaixaEtaria">
               <FaixaEtariaPie style="height:30vh; width:30vw"  v-bind:data="faixaEtaria"  />
@@ -72,6 +75,7 @@ import GeneroPie from './components/generoPie'
 import FaixaEtariaPie from './components/faixaEtariaPie'
 import topLojasPie from './components/topLojas'
 import horarioBar from './components/horarioBar'
+import { setInterval } from 'timers';
 export default {
   name: 'App',
   components: {
@@ -81,6 +85,7 @@ export default {
     horarioBar
   
   },
+    
   created(){
     var vm = this;
      axios.get('https://argenapi-otacilioneto.c9users.io:8080/users/horarioCompras'
@@ -104,10 +109,7 @@ export default {
   ) 
   .then(function (response){
     console.log(response.data);
-    //  vm.generoDatas.masculino =  response.data.masculino;
-    //  vm.generoDatas.feminino =  response.data.feminino;
-    //  vm.generoDatas.outros=  response.data.outros;
-    // vm.generoDatas.naoRespondido =  response.data.naoRespondido;  
+     
         vm.generoDatas.push(response.data.masculino);
     vm.generoDatas.push(response.data.feminino);
     vm.generoDatas.push(response.data.outros);
@@ -201,10 +203,100 @@ export default {
    
   },
   methods:{
-   
-    
-  }
+    requestTeste(){
+      var vm = this;
+     axios.get('https://argenapi-otacilioneto.c9users.io:8080/users/horarioCompras'
+  ) 
+  .then(function (response){
+    console.log(response.data);
+     
+        vm.resultadoVendas =  response.data.resultadoVendas;
+        console.log(vm.resultadoVendas);
+        vm.chegouResultadoVendas = true;
+  })
+  .catch(function (error) {
   
+    console.log(error);
+  
+  })
+  .then(function () {
+    
+  });
+    axios.get('https://argenapi-otacilioneto.c9users.io:8080/users/generoBalanco'
+  ) 
+  .then(function (response){
+    console.log(response.data);
+    //  vm.generoDatas.masculino =  response.data.masculino;
+    //  vm.generoDatas.feminino =  response.data.feminino;
+    //  vm.generoDatas.outros=  response.data.outros;
+    // vm.generoDatas.naoRespondido =  response.data.naoRespondido;  
+        vm.generoDatas.push(response.data.masculino);
+    vm.generoDatas.push(response.data.feminino);
+    vm.generoDatas.push(response.data.outros);
+    vm.generoDatas.push(response.data.naoRespondido);
+    console.log(vm.generoDatas);
+    vm.hey = true;
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+    console.log('dsasda');
+  })
+  .then(function () {
+    // always executed
+  });
+   axios.get('https://argenapi-otacilioneto.c9users.io:8080/users/gastoMedio'
+  ) 
+  .then(function (response){
+    console.log(response.data);
+  
+        vm.quantidadePessoas = response.data.quantidade;
+    vm.montante = response.data.montante;
+    vm.chegouGastoMedio = true;
+    //console.log(vm.generoDatas);
+   // vm.hey = true;
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  });
+     axios.get('https://argenapi-otacilioneto.c9users.io:8080/users/topLojas'
+  ) 
+  .then(function (response){
+    console.log(response.data);
+  
+    vm.toplojasNomes= response.data.rankingLojasNomes;
+    vm.toplojasQuant = response.data.rankingLojasQuant;
+    vm.chegouTopLojas = true;
+    //console.log(vm.generoDatas);
+   // vm.hey = true;
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  });
+
+
+    axios.get('https://argenapi-otacilioneto.c9users.io:8080/users/faixaEtaria'
+  ) 
+  .then(function (response){
+    console.log(response.data);
+  
+        vm.faixaEtaria =response.data.faixaEtaria;
+  
+    vm.chegouFaixaEtaria = true;
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+    console.log('dsasda');
+  })
+  .then(function () {
+    // always executed
+  });
+    }
+    
+  },
 }
 </script>
 
