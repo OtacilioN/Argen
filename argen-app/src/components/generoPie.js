@@ -29,9 +29,10 @@ import { Bar, Pie, mixins} from 'vue-chartjs'
 // }
 // LineChart.js
 //import {Pie } from 'vue-chartjs'
-
+const { reactiveProp } = mixins;
 export default {
   extends: Pie,
+  mixins: [reactiveProp],
   props: {data: Array},
   mounted () {
       console.log("achei");

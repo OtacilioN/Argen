@@ -11,8 +11,8 @@
         <v-icon>menu</v-icon>
       </v-btn>
     </v-toolbar>
-    <v-content>
-      <v-container justify-center  fluid grid-list-{xs through xl}>
+    <v-content mb-5 pb-5  class="mb-5 pb-5 " style="">
+      <v-container justify-center  class="" fluid grid-list-{xs through xl}>
         <v-layout column>
           <v-flex sm-1 wrap justify-center>
             <v-layout row style="background-color:#2B2825" align-center justify-center fill-height>
@@ -48,17 +48,20 @@
           </v-flex>
           <v-spacer></v-spacer>
           <v-flex sm-3 wrap>
-            <v-layout row justify-center class="">
+            <v-layout row justify-center class="mb-5 pb-5 " mb-5 pb-5 >
               <v-flex sm-6 style="margin-top:40vh; ">
               <v-card-title class="headline">Top Lojas</v-card-title>
               <topLojasPie  style="height:30vh; width:30vw" v-if="chegouTopLojas" v-bind:data="toplojasQuant" v-bind:labels="toplojasNomes"/>
               </v-flex>
-              <v-flex sm-6 style="margin-top:40vh; ">
-              <v-card-title class="headline">Compras por horário</v-card-title>
-              <horarioBar  style="height:10vh; width:30vw" v-if="chegouResultadoVendas" v-bind:objdata="resultadoVendas" />
+              <v-flex sm-6 style="margin-top:40vh;padding-bottom: 100px !important">
+              <v-card-title class=" headline">Compras por horário</v-card-title>
+              <horarioBar   style="height:10vh; width:30vw;" v-if="chegouResultadoVendas" v-bind:objdata="resultadoVendas" />
               </v-flex>
             </v-layout>
           </v-flex>
+        </v-layout>
+        <v-layout row>
+        
         </v-layout>
       </v-container>
     </v-content>
@@ -85,7 +88,9 @@ export default {
     horarioBar
   
   },
-
+  mounted(){
+    setInterval(function(){this.requestTeste();},3000);
+  },
   created(){
     var vm = this;
      axios.get('https://argenapi-otacilioneto.c9users.io:8080/users/horarioCompras'
@@ -167,12 +172,6 @@ export default {
     vm.chegouFaixaEtaria = true;
   })
   .catch(function (error) {
-    // handle error
-    console.log(error);
-    console.log('dsasda');
-  })
-  .then(function () {
-    // always executed
   });
 
   },
@@ -203,100 +202,7 @@ export default {
    
   },
   methods:{
-    requestTeste(){
-      var vm = this;
-     axios.get('https://argenapi-otacilioneto.c9users.io:8080/users/horarioCompras'
-  ) 
-  .then(function (response){
-    console.log(response.data);
-     
-        vm.resultadoVendas =  response.data.resultadoVendas;
-        console.log(vm.resultadoVendas);
-        vm.chegouResultadoVendas = true;
-  })
-  .catch(function (error) {
-  
-    console.log(error);
-  
-  })
-  .then(function () {
-    
-  });
-    axios.get('https://argenapi-otacilioneto.c9users.io:8080/users/generoBalanco'
-  ) 
-  .then(function (response){
-    console.log(response.data);
-    //  vm.generoDatas.masculino =  response.data.masculino;
-    //  vm.generoDatas.feminino =  response.data.feminino;
-    //  vm.generoDatas.outros=  response.data.outros;
-    // vm.generoDatas.naoRespondido =  response.data.naoRespondido;  
-        vm.generoDatas.push(response.data.masculino);
-    vm.generoDatas.push(response.data.feminino);
-    vm.generoDatas.push(response.data.outros);
-    vm.generoDatas.push(response.data.naoRespondido);
-    console.log(vm.generoDatas);
-    vm.hey = true;
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-    console.log('dsasda');
-  })
-  .then(function () {
-    // always executed
-  });
-   axios.get('https://argenapi-otacilioneto.c9users.io:8080/users/gastoMedio'
-  ) 
-  .then(function (response){
-    console.log(response.data);
-  
-        vm.quantidadePessoas = response.data.quantidade;
-    vm.montante = response.data.montante;
-    vm.chegouGastoMedio = true;
-    //console.log(vm.generoDatas);
-   // vm.hey = true;
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-  });
-     axios.get('https://argenapi-otacilioneto.c9users.io:8080/users/topLojas'
-  ) 
-  .then(function (response){
-    console.log(response.data);
-  
-    vm.toplojasNomes= response.data.rankingLojasNomes;
-    vm.toplojasQuant = response.data.rankingLojasQuant;
-    vm.chegouTopLojas = true;
-    //console.log(vm.generoDatas);
-   // vm.hey = true;
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-  });
-
-
-    axios.get('https://argenapi-otacilioneto.c9users.io:8080/users/faixaEtaria'
-  ) 
-  .then(function (response){
-    console.log(response.data);
-  
-        vm.faixaEtaria =response.data.faixaEtaria;
-  
-    vm.chegouFaixaEtaria = true;
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-    console.log('dsasda');
-  })
-  .then(function () {
-    // always executed
-  });
-    }
-    
-  },
+  } 
 }
 </script>
 

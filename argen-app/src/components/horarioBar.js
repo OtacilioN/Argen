@@ -1,8 +1,10 @@
 import { Bar, Pie, mixins} from 'vue-chartjs'
-
+const { reactiveProp } = mixins;
 export default {
     extends: Bar,
+    mixins: [reactiveProp],
     props: {objdata: Array},
+    
     mounted () {
         var resultado1 = [];
         var resultado2 = [];
