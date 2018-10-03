@@ -1,0 +1,24 @@
+[
+  {
+    "id": "0b8a8620-263e-498d-b2a7-11afd97a9d6b",
+    "data": [
+      {
+        "text": "Minha carteira",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "938f77d1-0fa9-456e-b812-46d053f39369",
+    "data": [
+      {
+        "text": "Meus RecPoints",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

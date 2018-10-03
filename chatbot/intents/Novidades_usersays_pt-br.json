@@ -1,0 +1,35 @@
+[
+  {
+    "id": "a8b289c2-2a61-42cc-97d6-727cf2b0ac81",
+    "data": [
+      {
+        "text": "Me mostre novidades!",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "8f078c44-ec08-47ef-a0ef-ac5b161ce6eb",
+    "data": [
+      {
+        "text": "Novidades",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "c5af810e-d5aa-45e9-a1af-59227e0873a6",
+    "data": [
+      {
+        "text": "Procurar Novidades",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "id": "f20bffce-3a80-42e3-862f-75e8ab8336e9",
+  "parentId": "25fea7cb-3c9e-4809-8f2a-fd72d4c56cbe",
+  "rootParentId": "25fea7cb-3c9e-4809-8f2a-fd72d4c56cbe",
+  "name": "Procurar Lojas - fallback",
+  "auto": false,
+  "contexts": [
+    "ProcurarLojas-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "ProcurarLojas.ProcurarLojas-fallback",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 2,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "Nós ainda estamos desenvolvendo essa funcionalidade infelizmente não conseguimos localizar esta loja",
+          "replies": [
+            "Voltar ao menu"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1508189244539,
+  "fallbackIntent": true,
+  "events": []
+}

@@ -1,0 +1,45 @@
+{
+  "id": "03bfa217-8150-4054-852e-0426945edb6a",
+  "name": "Sorteio Gol | 500",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 3,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "imageUrl": "https://i.imgur.com/pxaM9vV.jpg"
+        },
+        {
+          "type": 2,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "Escolha uma opção:",
+          "replies": [
+            "Voltar ao Menu",
+            "Consultar RecPoints"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "Parabéns, você agora está concorrendo ao sorteio de um lindo carro Gol 0 km, o sorteio acontecerá no último dia útil do mês."
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

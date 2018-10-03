@@ -1,0 +1,125 @@
+[
+  {
+    "id": "a5f94f63-e15f-4bac-94ed-cf52f290776b",
+    "data": [
+      {
+        "text": "Onde fica o ",
+        "userDefined": false
+      },
+      {
+        "text": "Belle Bijou",
+        "alias": "LojasEtapa2",
+        "meta": "@LojasEtapa2",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "ef672a63-45c5-49a2-b4e3-0e7610cfa61f",
+    "data": [
+      {
+        "text": "Onde fica a ",
+        "userDefined": false
+      },
+      {
+        "text": "Belle Bijou",
+        "alias": "LojasEtapa2",
+        "meta": "@LojasEtapa2",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "8fe3db2d-5ee3-40bf-8e4f-c29c0d1ff2e7",
+    "data": [
+      {
+        "text": "Procurar a loja ",
+        "userDefined": false
+      },
+      {
+        "text": "Belle Bijou",
+        "alias": "LojasEtapa2",
+        "meta": "@LojasEtapa2",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "9a58cb33-ae0e-4049-be53-78f6f3b1d387",
+    "data": [
+      {
+        "text": "Procura a loja ",
+        "userDefined": false
+      },
+      {
+        "text": "Belle Bijou",
+        "alias": "LojasEtapa2",
+        "meta": "@LojasEtapa2",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "d7137dfe-3f1d-4673-8038-6c4b9a746a71",
+    "data": [
+      {
+        "text": "Onde fica a loja ",
+        "userDefined": false
+      },
+      {
+        "text": "Arezzo",
+        "alias": "LojasEtapa2",
+        "meta": "@LojasEtapa2",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "f5f33a57-511b-4c4d-b9d4-ecac723fb6fe",
+    "data": [
+      {
+        "text": "Onde é a ",
+        "userDefined": false
+      },
+      {
+        "text": "Arezzo",
+        "alias": "LojasEtapa2",
+        "meta": "@LojasEtapa2",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "f19bbc90-8eff-49eb-aa76-d6a19d22a748",
+    "data": [
+      {
+        "text": "Arezzo",
+        "alias": "LojasEtapa2",
+        "meta": "@LojasEtapa2",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

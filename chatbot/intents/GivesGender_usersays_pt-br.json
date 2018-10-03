@@ -1,0 +1,15 @@
+[
+  {
+    "id": "4feebfd1-9353-4c3b-8b89-f9b64b29d763",
+    "data": [
+      {
+        "text": "Outro",
+        "alias": "gender",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

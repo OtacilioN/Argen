@@ -1,0 +1,47 @@
+{
+  "id": "4e9f483f-1516-4021-92a2-0a62396d4592",
+  "name": "[Procurar lojas etapa2]",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "4537f833-8fd5-48e3-bfd4-73dc49e331bb",
+          "required": false,
+          "dataType": "@LojasEtapa2",
+          "name": "LojasEtapa2",
+          "value": "$LojasEtapa2",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 2,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "Se você realizar uma compra não esquece me mandar uma foto da nota fiscal para conseguir RecPoints!",
+          "replies": [
+            "Voltar ao menu"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "A loja $lojasEtapa2 fica na etapa 2 do shopping!"
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

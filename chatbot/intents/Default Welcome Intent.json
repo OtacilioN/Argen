@@ -1,0 +1,46 @@
+{
+  "id": "64abfca0-766b-4b11-8792-76c24940503d",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [
+        {
+          "name": "userGIveName",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": [
+            "Oi, eu sou a Iris. Meu trabalho é te ajudar a ter uma experiência de shopping completa.  Te conhecendo um pouco mais eu vou poder te ajudar cada vez um tiquinho mais!",
+            "Oi, eu sou a Iris. Estou aqui para te ajudar a ter uma experiência de shopping completa. Te conhecendo um pouco mais eu vou poder te ajudar cada vez um tiquinho mais!"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "Para começarmos, como posso te chamar?"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ]
+}

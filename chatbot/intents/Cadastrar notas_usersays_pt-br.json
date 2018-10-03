@@ -1,0 +1,51 @@
+[
+  {
+    "id": "324a3dcc-2e59-40fc-a1fd-91209e9e7ddb",
+    "data": [
+      {
+        "text": "Conseguir recpoints",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "3f4d91c3-9127-4fbc-aeb9-438a54f42736",
+    "data": [
+      {
+        "text": "Cadastrar ",
+        "userDefined": false
+      },
+      {
+        "text": "cupons",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1
+  },
+  {
+    "id": "e0181b3b-82ef-48e6-a631-7d871f04f265",
+    "data": [
+      {
+        "text": "Cadastrar notas fiscais",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "2290227a-01fe-4b57-9d6f-3ba6881a0724",
+    "data": [
+      {
+        "text": "Cadastrar notas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

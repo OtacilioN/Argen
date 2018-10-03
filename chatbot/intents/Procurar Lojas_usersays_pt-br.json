@@ -1,0 +1,57 @@
+[
+  {
+    "id": "2db61b42-325f-41bd-89c7-b229c13d5050",
+    "data": [
+      {
+        "text": "Encontrar lugar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "b1ca58f8-6dac-4dc7-b160-ba4567e89b23",
+    "data": [
+      {
+        "text": "loja",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "b7ec055c-b716-4151-bd50-837d838d9dae",
+    "data": [
+      {
+        "text": "Encontrar lojas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "2c9a9640-cd2c-42a4-ac72-f4686c929921",
+    "data": [
+      {
+        "text": "Procurar lojas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "624db96a-f412-4c51-b96e-50128a84bfe2",
+    "data": [
+      {
+        "text": "Lojas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

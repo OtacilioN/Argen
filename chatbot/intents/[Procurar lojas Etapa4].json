@@ -1,0 +1,47 @@
+{
+  "id": "2efb0a76-bdb8-4317-91c0-d38461cbffd3",
+  "name": "[Procurar lojas Etapa4]",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "3f99bbc7-5fef-4d51-b0ff-17562c3b193f",
+          "required": false,
+          "dataType": "@LojasEtapa4",
+          "name": "LojasEtapa4",
+          "value": "$LojasEtapa4",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 2,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "Se você realizar uma compra não esquece me mandar uma foto da nota fiscal para conseguir RecPoints!",
+          "replies": [
+            "Voltar ao menu"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "A loja $LojasEtapa4 fica na etapa 4 do shopping!"
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

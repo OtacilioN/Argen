@@ -1,0 +1,56 @@
+{
+  "id": "3715e858-550b-43ca-afe9-c08f40220e70",
+  "name": "Novidades",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 1,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "EnCÃOtros",
+          "subtitle": "O Shopping Recife recebe hoje o EnCÃOtros, traga seu pet, vai ser animal!",
+          "imageUrl": "http://www.shoppingrecife.com.br//externos/noticias/ntc_7723.jpg",
+          "buttons": [
+            {
+              "text": "Saber mais!",
+              "postback": "http://www.shoppingrecife.com.br/evento/04/09/2018/encaotros"
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "Estes são todas as novidades para você!",
+          "subtitle": "",
+          "imageUrl": "https://i.imgur.com/J4O4bss.jpg",
+          "buttons": [
+            {
+              "text": "Voltar ao menu"
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

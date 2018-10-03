@@ -1,0 +1,81 @@
+{
+  "id": "3e298689-c4de-43ee-8b9c-eed257ca5a90",
+  "name": "Menu",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 1,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "RecPoints",
+          "subtitle": "Aqui você pode fotografar suas notas fiscais em troca de RecPoints",
+          "imageUrl": "https://i.imgur.com/q0ijsiqg.jpg",
+          "buttons": [
+            {
+              "text": "Meus RecPoints"
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "Procurando algo?",
+          "subtitle": "Posso te ajudar a achar lojas e produtos pelo shopping",
+          "imageUrl": "https://i.imgur.com/m1jd5Rw.jpg",
+          "buttons": [
+            {
+              "text": "Procurar"
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "Quer saber a programação do cinema?",
+          "subtitle": "Quais filmes, horários, preços e muito mais!",
+          "imageUrl": "https://i.imgur.com/CHXy3gc.jpg",
+          "buttons": [
+            {
+              "text": "Cinema"
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "Quer relatar algo?",
+          "subtitle": "Queremos ouvir a sua experiência para corrigir tudo que for possível.",
+          "imageUrl": "https://i.imgur.com/qw338cf.jpg",
+          "buttons": [
+            {
+              "text": "Relatar um problema"
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "Ei, essas são as opções em que posso te ajudar."
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

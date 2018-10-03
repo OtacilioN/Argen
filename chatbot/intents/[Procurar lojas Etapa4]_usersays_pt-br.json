@@ -1,0 +1,120 @@
+[
+  {
+    "id": "9ff6969a-7c56-4174-b2ad-e185f95424c8",
+    "data": [
+      {
+        "text": "Onde fica o ",
+        "userDefined": false
+      },
+      {
+        "text": "Amarelle",
+        "alias": "LojasEtapa4",
+        "meta": "@LojasEtapa4",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "ab2206cd-e40b-4fb3-8304-a56707ea06d3",
+    "data": [
+      {
+        "text": "Onde fica a ",
+        "userDefined": false
+      },
+      {
+        "text": "Amarelle",
+        "alias": "LojasEtapa4",
+        "meta": "@LojasEtapa4",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "17dea5ed-3326-4328-9251-be2a8cfad567",
+    "data": [
+      {
+        "text": "Procurar a loja ",
+        "userDefined": false
+      },
+      {
+        "text": "Aliada Jóias",
+        "alias": "LojasEtapa4",
+        "meta": "@LojasEtapa4",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "8cc65c26-4f33-4306-8ec7-7c1d94021423",
+    "data": [
+      {
+        "text": "Onde fica a loja ",
+        "userDefined": false
+      },
+      {
+        "text": "Amarelle",
+        "alias": "LojasEtapa4",
+        "meta": "@LojasEtapa4",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "615ba735-fdb9-49c9-9637-caed90d581d9",
+    "data": [
+      {
+        "text": "Onde é a ",
+        "userDefined": false
+      },
+      {
+        "text": "Amarelle",
+        "alias": "LojasEtapa4",
+        "meta": "@LojasEtapa4",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "c6854a43-abb9-4343-8f44-30ff141f153e",
+    "data": [
+      {
+        "text": "Amarelle",
+        "alias": "LojasEtapa4",
+        "meta": "@LojasEtapa4",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

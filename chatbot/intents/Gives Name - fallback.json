@@ -1,0 +1,38 @@
+{
+  "id": "40612675-49ce-4bab-9b64-e77693d6db5a",
+  "parentId": "42b5d6f4-7f58-4f0e-9308-1623cd77f17e",
+  "rootParentId": "42b5d6f4-7f58-4f0e-9308-1623cd77f17e",
+  "name": "Gives Name - fallback",
+  "auto": false,
+  "contexts": [
+    "GivesName-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "GivesName.GivesName-fallback",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "Desculpe, não pude compreender a sua idade!"
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "Você pode digitar a sua idade no seguinte formato? Exemplo: 21 anos"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1508189244539,
+  "fallbackIntent": true,
+  "events": []
+}

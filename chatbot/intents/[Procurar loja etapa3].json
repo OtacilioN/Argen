@@ -1,0 +1,47 @@
+{
+  "id": "982e5df6-6616-4001-804d-df1a922ecdad",
+  "name": "[Procurar loja etapa3]",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "4513c4c9-a441-4f35-af77-62bc7298d07e",
+          "required": false,
+          "dataType": "@LojasEtapas3",
+          "name": "LojasEtapas3",
+          "value": "$LojasEtapas3",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 2,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "Se você realizar uma compra não esquece me mandar uma foto da nota fiscal para conseguir RecPoints!",
+          "replies": [
+            "Voltar ao menu"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "A loja $LojasEtapas3 fica na etapa 3 do shopping!"
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

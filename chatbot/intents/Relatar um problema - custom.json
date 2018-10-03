@@ -1,0 +1,51 @@
+{
+  "id": "0f3aaf4e-7eb2-4b58-ae8c-5d1ac2d794ea",
+  "parentId": "05b1885a-31f4-4b33-9be2-2e064c979d6c",
+  "rootParentId": "05b1885a-31f4-4b33-9be2-2e064c979d6c",
+  "name": "Relatar um problema - custom",
+  "auto": true,
+  "contexts": [
+    "Relatarumproblema-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Relatarumproblema.Relatarumproblema-custom",
+      "affectedContexts": [
+        {
+          "name": "Relatarumproblema-followup",
+          "parameters": {},
+          "lifespan": 0
+        }
+      ],
+      "parameters": [
+        {
+          "id": "f077ee4e-cc36-4807-b6da-b93f6c6e8796",
+          "dataType": "@sys.any",
+          "name": "any",
+          "value": "$any",
+          "isList": true
+        }
+      ],
+      "messages": [
+        {
+          "type": 2,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "Seu problema foi relatado e um humano entrará em contato o mais breve possível!",
+          "replies": [
+            "Voltar ao menu"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1508189244539,
+  "fallbackIntent": false,
+  "events": []
+}
