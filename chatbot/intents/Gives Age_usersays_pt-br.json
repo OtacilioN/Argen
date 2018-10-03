@@ -1,0 +1,62 @@
+[
+  {
+    "id": "e2921b9d-e99f-49b3-aa32-cea3c4644c21",
+    "data": [
+      {
+        "text": "doze",
+        "alias": "age",
+        "meta": "@sys.number-integer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "97af6137-b96f-4e8a-b367-c023519615eb",
+    "data": [
+      {
+        "text": "21",
+        "alias": "age",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "66f63de1-a9e0-4605-af36-34967416269f",
+    "data": [
+      {
+        "text": "Vinte e um",
+        "alias": "age",
+        "meta": "@sys.number-integer",
+        "userDefined": false
+      },
+      {
+        "text": " anos",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "b98934ca-e3a1-4663-8372-0bc1b100605a",
+    "data": [
+      {
+        "text": "21",
+        "alias": "age",
+        "meta": "@sys.number-integer",
+        "userDefined": false
+      },
+      {
+        "text": " anos",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

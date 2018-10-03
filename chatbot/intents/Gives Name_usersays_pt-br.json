@@ -1,0 +1,41 @@
+[
+  {
+    "id": "410861f0-7ece-4bb0-be64-f9ca8f7d94b1",
+    "data": [
+      {
+        "text": "Otacilio Saraiva Maia Neto",
+        "alias": "username",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "652d9db9-8a10-4259-981d-bc8f3c14d71d",
+    "data": [
+      {
+        "text": "Michael Barney",
+        "alias": "username",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "d7223f11-5f8c-4a13-9c0c-ab3d00411c56",
+    "data": [
+      {
+        "text": "Abinadabe",
+        "alias": "username",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "id": "d3960f7c-cdd2-4e9b-a101-43e4abec1869",
+  "name": "Procurar loja inexistente",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "f62de214-841c-4c0f-bf11-cfff3f070f8e",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "any",
+          "value": "$any",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 2,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "Nós ainda estamos desenvolvendo essa funcionalidade infelizmente não conseguimos localizar esta loja",
+          "replies": [
+            "Voltar ao menu"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 250000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

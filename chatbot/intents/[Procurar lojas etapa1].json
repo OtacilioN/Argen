@@ -1,0 +1,47 @@
+{
+  "id": "75b61894-b814-4a9d-8c0e-7e4be2b32b1b",
+  "name": "[Procurar lojas etapa1]",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "6a637a6f-50e7-4922-925a-ce27166f6777",
+          "required": false,
+          "dataType": "@lojasEtapa1",
+          "name": "lojasEtapa1",
+          "value": "$lojasEtapa1",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 2,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "Se você realizar uma compra não esquece me mandar uma foto da nota fiscal para conseguir RecPoints!",
+          "replies": [
+            "Voltar ao menu"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "A loja $lojasEtapa1 fica na etapa 1 do shopping!"
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

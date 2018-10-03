@@ -1,0 +1,24 @@
+[
+  {
+    "id": "7cd00c9c-f6fe-46b2-ab22-6c934f10dbb7",
+    "data": [
+      {
+        "text": "Procurar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2
+  },
+  {
+    "id": "eec02675-37bc-4b17-8777-068aac32d340",
+    "data": [
+      {
+        "text": "encontrar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1
+  }
+]

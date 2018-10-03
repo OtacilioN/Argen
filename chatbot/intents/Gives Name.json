@@ -1,0 +1,58 @@
+{
+  "id": "42b5d6f4-7f58-4f0e-9308-1623cd77f17e",
+  "name": "Gives Name",
+  "auto": true,
+  "contexts": [
+    "userGIveName"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "getname",
+      "affectedContexts": [
+        {
+          "name": "GivesName-followup",
+          "parameters": {},
+          "lifespan": 2
+        },
+        {
+          "name": "userGIveName",
+          "parameters": {},
+          "lifespan": 0
+        }
+      ],
+      "parameters": [
+        {
+          "id": "7ff5259c-57c8-4e90-9356-7384379111d8",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "username",
+          "value": "$username",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": [
+            "Prazer, $username. Você poderá acumular RecPoints, durante sua experiência no shopping. Para isso, vou fazer algumas perguntas básicas.",
+            "Prazer, $username. Você poderá acumular RecPoints, durante sua experiência no shopping. Para isso, vou fazer algumas perguntas básicas."
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "Qual é a sua idade?"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

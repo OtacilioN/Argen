@@ -1,0 +1,42 @@
+{
+  "description": "",
+  "language": "pt-br",
+  "disableInteractionLogs": false,
+  "disableStackdriverLogs": true,
+  "googleAssistant": {
+    "googleAssistantCompatible": false,
+    "project": "argen-9f8f3",
+    "welcomeIntentSignInRequired": false,
+    "startIntents": [],
+    "systemIntents": [],
+    "endIntentIds": [],
+    "oAuthLinking": {
+      "required": false,
+      "grantType": "AUTH_CODE_GRANT"
+    },
+    "voiceType": "MALE_1",
+    "capabilities": [],
+    "protocolVersion": "V2",
+    "isDeviceAgent": false
+  },
+  "defaultTimezone": "America/Buenos_Aires",
+  "webhook": {
+    "url": "https://argen-michaelbarney.c9users.io/webhook",
+    "headers": {
+      "": ""
+    },
+    "available": true,
+    "useForDomains": true,
+    "cloudFunctionsEnabled": false,
+    "cloudFunctionsInitialized": true
+  },
+  "isPrivate": true,
+  "customClassifierMode": "use.after",
+  "mlMinConfidence": 0.3,
+  "supportedLanguages": [],
+  "onePlatformApiVersion": "v2",
+  "analyzeQueryTextSentiment": false,
+  "enabledKnowledgeBaseNames": [],
+  "knowledgeServiceConfidenceAdjustment": -0.4,
+  "dialogBuilderMode": false
+}

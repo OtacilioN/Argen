@@ -1,0 +1,24 @@
+[
+  {
+    "id": "52d5df24-b5a7-45a1-a00b-0a7672b992f1",
+    "data": [
+      {
+        "text": "Conferir RecPoints",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "19ab66dd-9cca-4752-832e-400b8a41a56f",
+    "data": [
+      {
+        "text": "Consultar RecPoints",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

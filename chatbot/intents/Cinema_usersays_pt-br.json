@@ -1,0 +1,57 @@
+[
+  {
+    "id": "b64e3139-c067-4d1c-a0ef-030e7dfcef42",
+    "data": [
+      {
+        "text": "Quero ver o cinema",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "0b182cb4-3c95-4834-af65-3dd41abbadf6",
+    "data": [
+      {
+        "text": "O que tá passando no cinema?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "529d6630-e08c-42bc-a296-13bc8d25ce1f",
+    "data": [
+      {
+        "text": "Ver os filmes",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "00929799-4e21-4be2-aef2-37ea241ffe97",
+    "data": [
+      {
+        "text": "Me mostre os filmes em cartaz",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "e7589e29-5127-4a26-bdd0-5ff488abd390",
+    "data": [
+      {
+        "text": "Cinema",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

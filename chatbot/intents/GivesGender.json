@@ -1,0 +1,97 @@
+{
+  "id": "fc75ea28-ad06-4c5f-9751-2a537d50e2d3",
+  "parentId": "5a7ba4fe-b5ec-4c5f-8220-7cda11810744",
+  "rootParentId": "42b5d6f4-7f58-4f0e-9308-1623cd77f17e",
+  "name": "GivesGender",
+  "auto": true,
+  "contexts": [
+    "GivesAge-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "GivesName.GivesName-custom.GivesAge-custom",
+      "affectedContexts": [
+        {
+          "name": "GivesAge-followup",
+          "parameters": {},
+          "lifespan": 0
+        }
+      ],
+      "parameters": [
+        {
+          "id": "85344b2c-2c4d-4b72-91e0-8da939bea8ef",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "gender",
+          "value": "$gender",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 1,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "RecPoints",
+          "subtitle": "Aqui você pode fotografar suas notas fiscais em troca de RecPoints",
+          "imageUrl": "https://i.imgur.com/q0ijsiqg.jpg",
+          "buttons": [
+            {
+              "text": "Meus RecPoints",
+              "postback": "Meus RecPoints"
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "Procurando algo?",
+          "subtitle": "Posso te ajudar a achar lojas e produtos pelo shopping",
+          "imageUrl": "https://i.imgur.com/m1jd5Rw.jpg",
+          "buttons": [
+            {
+              "text": "Procurar",
+              "postback": "Procurar"
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "Quer saber a programação do cinema?",
+          "subtitle": "Quais filmes, horários, preços e muito mais!",
+          "imageUrl": "https://i.imgur.com/CHXy3gc.jpg",
+          "buttons": [
+            {
+              "text": "Cinema",
+              "postback": "Cinema"
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "Arretado! Nosso público é bem diverso! É sempre importante entender as pessoas para que possamos atender cada vez melhor!"
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "Ei, essas são as opções em que posso te ajudar."
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1508189244539,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "c946e1d6-44ee-4ed6-b4ef-c828e01ab3c3",
+    "data": [
+      {
+        "text": "Ir para o menu",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "c3221f01-c487-4079-92c0-0fee617ae951",
+    "data": [
+      {
+        "text": "Menu",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "88204a21-b1fc-4c07-8617-c0cd77732b43",
+    "data": [
+      {
+        "text": "Voltar ao menu!",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

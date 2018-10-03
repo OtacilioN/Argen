@@ -1,0 +1,133 @@
+[
+  {
+    "id": "52fff483-3ee6-49c7-a301-b229383d4eba",
+    "data": [
+      {
+        "text": "Onde fica a ",
+        "userDefined": false
+      },
+      {
+        "text": "Drogasil",
+        "alias": "lojasEtapa1",
+        "meta": "@lojasEtapa1",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "aab4ffc0-8126-4820-b6bd-444e31b460a4",
+    "data": [
+      {
+        "text": "Onde fica o ",
+        "userDefined": false
+      },
+      {
+        "text": "Drogasil",
+        "alias": "lojasEtapa1",
+        "meta": "@lojasEtapa1",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "e07485d3-45fc-4e4b-817e-506c01ccc111",
+    "data": [
+      {
+        "text": "drogasil",
+        "alias": "lojasEtapa1",
+        "meta": "@lojasEtapa1",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "4fe3f4cb-2748-4ec7-8bb3-ff35d247d7eb",
+    "data": [
+      {
+        "text": "Onde é a ",
+        "userDefined": false
+      },
+      {
+        "text": "Drogasil",
+        "alias": "lojasEtapa1",
+        "meta": "@lojasEtapa1",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "4a12e6ec-8de0-4cc6-9811-75478724c295",
+    "data": [
+      {
+        "text": "Onde fica a loja ",
+        "userDefined": false
+      },
+      {
+        "text": "Drogasil",
+        "alias": "lojasEtapa1",
+        "meta": "@lojasEtapa1",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "747c2b3c-b503-4bdf-97be-f132e529b19a",
+    "data": [
+      {
+        "text": "Procura a loja ",
+        "userDefined": false
+      },
+      {
+        "text": "Bob\u0027s",
+        "alias": "lojasEtapa1",
+        "meta": "@lojasEtapa1",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "09b69fdf-6688-45e0-b480-7c9a3d6c6bd9",
+    "data": [
+      {
+        "text": "Procurar a loja ",
+        "userDefined": false
+      },
+      {
+        "text": "Amarelo Melo",
+        "alias": "lojasEtapa1",
+        "meta": "@lojasEtapa1",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

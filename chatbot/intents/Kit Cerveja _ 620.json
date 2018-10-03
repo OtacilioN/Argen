@@ -1,0 +1,45 @@
+{
+  "id": "665f7273-2a99-4073-939f-89b4ff22ada3",
+  "name": "Kit Cerveja | 620",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 3,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "imageUrl": "https://www.hojeemdia.com.br/polopoly_fs/1.447207!/image/image.jpg_gen/derivatives/landscape_653/image.jpg"
+        },
+        {
+          "type": 2,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "Escolha uma opção:",
+          "replies": [
+            "Voltar ao Menu",
+            "Consultar RecPoints"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "Parabéns, você acaba de ganhar um kit de cerveja, você pode retirar na central de relacionamentos!"
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

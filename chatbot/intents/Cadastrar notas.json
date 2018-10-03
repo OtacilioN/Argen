@@ -1,0 +1,38 @@
+{
+  "id": "dc210225-c3fc-42e0-bb28-26f24badcdd5",
+  "name": "Cadastrar notas",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 2,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "Se mudar de ideia basta tocar no botão:",
+          "replies": [
+            "Voltar ao menu"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "Pronto, basta tirar uma foto do QRCode da sua nota fiscal e me mandar por aqui pelo chat mesmo!"
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,75 @@
+{
+  "id": "5a7ba4fe-b5ec-4c5f-8220-7cda11810744",
+  "parentId": "42b5d6f4-7f58-4f0e-9308-1623cd77f17e",
+  "rootParentId": "42b5d6f4-7f58-4f0e-9308-1623cd77f17e",
+  "name": "Gives Age",
+  "auto": true,
+  "contexts": [
+    "GivesName-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "GivesName.GivesName-custom",
+      "affectedContexts": [
+        {
+          "name": "GivesAge-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "81c34cb5-2d5a-48e1-9272-994d08fec156",
+          "required": false,
+          "dataType": "@sys.number-integer",
+          "name": "age",
+          "value": "$age",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "speech": "Nós do shopping Recife temos 40 anos! Já fazemos parte da história de várias gerações."
+        },
+        {
+          "type": 2,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "Uma última pergunta, qual gênero você se identifica?",
+          "replies": [
+            "Feminino",
+            "Masculino",
+            "Outros"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": [
+            "Nós temos 40 anos! Já fazemos parte da história de várias gerações.",
+            "Você sabia que o shopping tem 40 anos? Todo esse tempo na história do Recife."
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "Uma última pergunta, qual gênero você se identifica?"
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "facebook": false
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1508189244539,
+  "fallbackIntent": false,
+  "events": []
+}

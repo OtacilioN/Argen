@@ -1,0 +1,78 @@
+{
+  "id": "ac5bab3b-c274-4bd7-b675-1e9ad8e452a6",
+  "name": "Cinema",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 1,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "A freira",
+          "subtitle": "Próximas sessões(2d): 13:00 15:10 17:20 (IMax) 16:40 21:10",
+          "imageUrl": "http://www.shoppingrecife.com.br/externos/app/cinema/cartaz_pt/filme_2127.jpg",
+          "buttons": [
+            {
+              "text": "Ver mais detalhes",
+              "postback": "http://www.shoppingrecife.com.br/cinema/a-freira"
+            },
+            {
+              "text": "Voltar ao menu"
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "O predador",
+          "subtitle": "Próximas sessões(2d): 15:30 20:15 (IMax) 14:20 18:50",
+          "imageUrl": "http://www.shoppingrecife.com.br/externos/app/cinema/cartaz_pt/filme_2134.jpg",
+          "buttons": [
+            {
+              "text": "Ver mais detalhes",
+              "postback": "http://www.shoppingrecife.com.br/cinema/o-predador"
+            },
+            {
+              "text": "Voltar ao menu"
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "platform": "facebook",
+          "lang": "pt-br",
+          "title": "22 Milhas",
+          "subtitle": "Próximas sessões(2d): 20:25 22:25",
+          "imageUrl": "http://www.shoppingrecife.com.br/externos/app/cinema/cartaz_pt/filme_2137.jpg",
+          "buttons": [
+            {
+              "text": "Ver mais detalhes",
+              "postback": "http://www.shoppingrecife.com.br/cinema/22-milhas"
+            },
+            {
+              "text": "Voltar ao menu"
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "Vou te mostrar os filmes em cartaz e os horários!"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}
