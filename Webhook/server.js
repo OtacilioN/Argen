@@ -64,7 +64,7 @@ app.post('/webhook', function(request, response){
             let id = request.body.originalDetectIntentRequest.payload.data.sender.id;
             processImage(imageUrlFinal, id)
             var sug = new Suggestion({
-                title:"Recebemos sua foto, vamos analisar e lhe dar seus RecPoints!",
+                title:"Recebi sua foto, vamos analisar e lhe dar seus RecPoints!",
                 reply:"Voltar ao Menu"
             });
             sug.addReply_('Meus RecPoints')
@@ -129,7 +129,6 @@ app.post('/webhook', function(request, response){
                 sugst.addReply_("Sorteio Gol | 500")
             }
             agent.add(sugst)
-            // console.log("has");
         }
         else{
             var sugst = new Suggestion({
@@ -182,8 +181,19 @@ app.post('/webhook', function(request, response){
             } 
             else {
                 console.log(value.result);
+                var url = value.result;
+                console.log("process receipt");
+                //Check if Link is for development page and turn it into a standard link
+                if(url.indexOf("p=") >= 0){
+                    console.log("FOUND STRANGE!");
+                    url = url.split("|")[0];
+                    console.log("Split: " + url);
+                    url = url.replace("p=", "chNFe=");
+                    console.log("Final: " + url);
+                }
+                    
                 var html;
-                request(value.result, function (error, response, body) {
+                request(url, function (error, response, body) {
                 html = body;
 
                 let doc = cheerio.load(html);
@@ -245,7 +255,7 @@ app.post('/webhook', function(request, response){
                             price: metadata.price,
                         };
 
-                        points[id] += parseInt(price);
+                        points[id] += parseInt(price)*200;
 
                         var docRef = db.collection('cliente').doc(id);
                         
