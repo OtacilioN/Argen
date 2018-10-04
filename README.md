@@ -5,7 +5,7 @@
 
 A ideia é que o usuário acumule pontos em troca de fotos das suas notas fiscais. Íris extrai os dados de cada compra, cruza com os dados do consumidor e traça um perfil de usuário. Esses dados serão usados na hora de tomadas de decisões estratégicas por parte do shopping.
 
-O projeto ficou em primeiro lugar no **Hackathon Shopping Recife 2018**, primeiro da categoria em todo Brasil. Curtiu o projeto? [Você já pode conversar com a Íris!](https://www.facebook.com/IrisShoppingBot/)
+O projeto ficou em primeiro lugar no **Hackathon Shopping Recife 2018**, primeiro da categoria em todo Brasil. Curtiu o projeto? [Você já pode conversar com a Íris!](https://www.messenger.com/t/IrisShoppingBot)
 
 ## Sobre
 
