@@ -1,1 +1,26 @@
-Repositório que contem o código da API que pega os dados do banco Firebase e passa para o dashboard
+# ArgenAPI
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
